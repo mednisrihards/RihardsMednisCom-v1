@@ -1,0 +1,72 @@
+@import 'navigation', 'projects', 'resume', 'about', 'contact';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30%;
+}
+
+.bg-image {
+    display: none;
+}
+
+body {
+    background-color: $bg-color;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    color: white;
+    font-family: $resume-subtitle-font;
+    font-size: 4rem;
+}
+
+p {
+    color: white;
+    font-family: $resume-paragraph-font;
+    font-size: 3rem;
+}
+
+section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 12vh 8vw 0;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 739px) {
+    section {
+        padding: 20vh 8vw 0;
+        max-width: 2024px;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .bg-image {
+        display: unset;
+        width: 428px;
+        height: 485px;
+        position: fixed;
+        right: 0;
+        bottom: -50px;
+    }
+  }
+
+  @media only screen and (min-width: 1754px) {
+    .bg-image {
+        width: 762px;
+        height: 952px;
+        right: -60px;
+        bottom: -250px;
+    }
+  }

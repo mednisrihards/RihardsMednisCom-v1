@@ -1,0 +1,126 @@
+@import 'constants';
+
+nav {
+    background-color: $bg-color;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    min-height: 8vh;
+    color: $nav-text-color;
+    font-family: $nav-font;
+    z-index: 1;
+
+    .active{
+        font-size: 25rem !important;
+    }
+
+    p {
+        padding: unset;
+    }
+    
+    ul .navBtn {
+        list-style: none;
+        letter-spacing: 0.4rem;
+        font-size: 11rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: .5s;
+
+        a {
+            text-decoration: none;
+            color: $nav-text-color;
+        }
+    }
+
+        .nav-btns {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: $nav-bg-color;
+            width: 50%;
+            height: 100vh;
+            text-align: center;
+            z-index: 2;
+            transform: translateX(100%);
+            transition: ease-in 0.5s ;
+
+        }
+
+        .nav-active {
+            transform: translateX(0%);
+            display: flex;
+            box-shadow: 7px 0 35px 15px black;
+        }
+
+        .name {
+            flex: 2rem;
+            font-size: 14rem;
+            line-height: 23px;
+        }
+
+        .name > span {
+            display: flex;
+            font-size: 20%;
+
+            img {
+                width: 15px;
+                height: 15px;
+                padding-right: 5px;
+            }
+        }
+}
+
+.burger {
+    cursor: pointer;
+    z-index: 3;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color:white;
+    margin: 7px;
+}
+
+@media only screen and (min-width: 739px) {
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        padding: 40px;
+        .nav-btns {
+            min-width: 60vw;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(0%);
+            flex-direction: row;
+            background-color: transparent !important;
+            height: 8vh;
+        }
+        ul .navBtn {
+            list-style: none;
+            letter-spacing: 0.4rem;
+            font-weight: bold;
+            display: flex;
+            width: 90%;
+            justify-content: space-around;
+        }
+    }
+
+
+}
+
+  @media only screen and (min-width: 1024px) {
+    nav  .nav-btns {
+            max-width: 40vw !important;
+            min-width: 30vw;
+        }
+  }

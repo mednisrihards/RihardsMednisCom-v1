@@ -1,0 +1,61 @@
+@import 'constants';
+
+.section2 {
+    flex-direction: column;
+
+    .resume-sec {
+        padding-bottom: 3vh;
+    }
+    
+    h2 {
+        color: $resume-title-color;
+        font-family: $resume-title-font;
+        font-size: 6rem;
+        padding-bottom: 1.5vh;
+    }
+
+    h1 {
+        color: $resume-subtitle-color;
+
+        &::before{
+            content: '- ';
+        }
+    }
+
+    p {
+        color: $resume-paragraph-color;
+        padding-bottom: 1vh;
+        padding-left: 4vw;
+    }
+
+    .col1,
+    .col2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 739px) {
+
+    .section2 {
+        flex-direction: row;
+        margin: auto;
+
+        h2 {
+            font-size: 11rem;
+        }
+
+        h1 {
+            font-size: 6rem;
+            padding-top: 2vh;
+        }
+
+        p {
+            font-size: 4rem;
+        }
+
+        .col2 {
+            padding-left: 8vw;
+        }
+    }
+}
+

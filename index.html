@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <a href='https://www.freepik.com/vectors/people'>People vector created by freepik - www.freepik.com</a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+                integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+                crossorigin="anonymous">
+        </script>
+        <title>Portfolio</title>
+    </head>
+    <img src="./img/bg.jpg" alt="bg-image" class="bg-image">
+    <body>
+        <nav>
+            <div class="name">
+                <h1>RIHARDS MEDNIS</h1>
+                <p>Web developer</p>
+                <span><img src="./img/marker.svg" alt="marker">Riga, Latvia</span>
+            </div>
+            <ul class="nav-btns">
+                <li class="navBtn active projects"><a href="#projects">Projects</a></li>
+                <li class="navBtn"><a href="#resume">Resume</a></li>
+                <li class="navBtn"><a href="#about">About</a></li>
+                <li class="navBtn"><a href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+            <section class="section1" id="projects" data-sal="slide-down" style="--sal-duration: 1s;">
+                <div class="card">
+                    <img src="./img/json.svg" alt="json">
+                    <div class="btns">
+                        <div class="btn">
+                            <img src="./img/eye.svg" alt="Live demo"><a href="./application_to_json/" target="_blank"><p>Live Preview</p></a>
+                        </div>
+                        <div class="btn">
+                            <img src="./img/github.svg" alt="GitHub"><a href="https://github.com/mednisrihards/application-to-json" target="_blank"><p>GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/php.svg" alt="php">
+                    <div class="btns">
+                        <div class="btn">
+                            <img src="./img/eye.svg" alt="Live demo"><a href="./php_storing_items/" target="_blank"><p>Live Preview</p></a>
+                        </div>
+                        <div class="btn">
+                            <img src="./img/github.svg" alt="GitHub"><a href="https://github.com/mednisrihards/PHP-items-storage" target="_blank"><p>GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/react.svg" alt="react">
+                    <div class="btns">
+                        <div class="btn">
+                            <img src="./img/eye.svg" alt="Live demo"><a href="./php_storing_items/" target="_blank"><p>Live Preview</p></a>
+                        </div>
+                        <div class="btn">
+                            <img src="./img/github.svg" alt="GitHub"><a href="https://github.com/mednisrihards/PHP-items-storage" target="_blank"><p>GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2" id="resume">
+                <div class="col1">
+                    <div class="resume-sec edu">
+                        <h2>Education</h1>
+                        <h1>Univeristy of applied sciences</h1>
+                        <p>Bachelors degree of "Programming engineering"</p>
+                    </div>
+                    <div class="resume-sec lang">
+                        <h2>Languages</h2>
+                        <h1>Latvian</h1>
+                        <p>Native, fluent spoken and written</p>
+                        <h1>English</h1>
+                        <p>Fluent spoken and written</p>
+                        <h1>Russian</h1>
+                        <p>Fluent spoken and written</p>
+                    </div>
+                </div>
+                <div class="resume-sec col2">
+                    <div class="exp">
+                        <h2>Experience</h2>
+                        <h1>Scandiweb LTD</h1>
+                        <p>Junior web developer</p>
+                        <h1>VAS "Latvian State Radio and Television Center"</h1>
+                        <p>Customer service representative</p>
+                        <h1>SIA "Avoni Technology"</h1>
+                        <p>Junior software administrator</p>
+                        <h1>SIA "Ātrais kredīts"</h1>
+                        <p>Intern</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section3" id="about">
+                <h1>Hi, I'm Rihards!</h1>
+                <div class="section3__columns">
+                    <div class="text">
+                        <p>I'm striving to be a professional web developer and do it for a living. Right now 
+                            studying programming engineering and I'm absolutely happy about it. I love to make 
+                            things pretty and more than that I love to make things do what I want them to do, 
+                            so I have started to know React better.
+                        </p>
+                        <p>I'm trying out different languages so I could do 
+                            a mid level IOS app with a information storing to the local or 
+                            remote database, a nice looking React app with Hooks, get the current 
+                            currency rates on the currency exchange app or even a management system to manage the databese.
+                        </p>
+                    </div>
+                    <img src="./img/photo.svg" alt="photo"  data-sal="fade-in" style="--sal-duration: 1.5s;">
+                </div>
+            </section>
+            <section class="section4" id="contacts">
+                <a href="tel:+37120401160"><p><img src="./img/phone.svg" alt="phone">+371 20401160</p></a>
+                <a href="mailto:mednis.rihards@gmail.com"><p><img src="./img/envelope-solid.svg" alt="envelope">mednis.rihards@gmail.com</p></a>
+                <form name="form">
+                    <p id="alert" class="message"></p>
+                    <p>or send an e-mail straight from here...</p>
+                    <input type="text" class="section4__custom-company" required="required" name="company" autocomplete="off" placeholder="Name">
+                    <textarea type="text" class="section4__custom-text" required="required" name="message" autocomplete="off" placeholder="Text"></textarea>
+                    <input type="button"  class="section4__custom-btn" name="submit" value="Send">
+                </form>
+            </section>
+        <script src="node_modules/jump.js/dist/jump.module.js"></script>
+        <script src="./node_modules/sal.js/dist/sal.js"></script>
+        <script type="module" src="js/app.js"></script>
+    </body>
+</html>

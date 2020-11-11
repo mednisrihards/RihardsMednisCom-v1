@@ -1,0 +1,90 @@
+@import 'constants';
+
+.section1 {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        transition: 1s;
+        overflow: hidden;
+        color: white;
+        background-color:#002651;
+        height: 400px;
+        margin: 20px;
+        min-width: 300px;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            size: fill;
+        }
+
+        p {
+            padding-left: 20px;
+            font-size: 7rem;
+        }
+
+        .btns {
+            transition: 1s;
+            position: absolute;
+            bottom: 0;
+            align-items: center;
+            width: 100%;
+            transition: bottom ease 0.5s;
+
+            img {
+                width: 60px;
+                height: 30px;
+            }
+
+            p {
+                font-size: 4rem;
+            }
+
+            .btn{
+                display: flex;
+                width: 100%;
+                padding: 5px 0px 5px 0px;
+                font-family: $card-btn-font;
+                background-color:$card-btn-color;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color:$card-btn-hover-color;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 560px) {
+    .card {
+        width: 400px;
+        height: 500px !important;
+        min-width: unset;
+        min-height: unset;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        .btns {
+            bottom: -80px !important;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            
+            .btns {
+                bottom: 0px !important;
+            }
+        }
+    }
+}
